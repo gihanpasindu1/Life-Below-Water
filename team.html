@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life Below Water</title>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="Styles/Student-03/teamstyle.css" />
+
+    <style></style>
+  </head>
+  <body>
+    <!-- Header with Navbar -->
+
+    <div class="loader-overlay" id="loader">
+      <div class="spinner"></div>
+    </div>
+
+    <header>
+      <div class="logo">
+        <img src="Images/Student-02/logo.png" alt="Life Below Water Logo" />
+
+        Life Below Water
+      </div>
+      <nav>
+        <a href="home.html">Home</a>
+
+        <a href="table.html">Table</a>
+        <a href="team.html">Team</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="sitemap.html">Sitemap</a>
+        <a href="profile.html" class="profile-link" title="user Profile"></a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Our Team Members</h1>
+      <div class="container">
+        <div class="team-member" tabindex="0">
+          <img
+            class="team-member-image"
+            src="Images/Student-03/ackshayan.avif"
+            alt="Team Member 1"
+          />
+          <div class="details">
+            <h3><b>J.Ackshayan</b></h3>
+            <p>Role: Student-01</p>
+            <p>Designed and Implemented pages:</p>
+            <p>Splash Screen | Volunteer</p>
+          </div>
+        </div>
+
+        <div class="team-member" tabindex="0">
+          <img
+            class="team-member-image"
+            src="Images/Student-03/bimsara.avif"
+            alt="Team Member 2"
+          />
+          <div class="details">
+            <h3><b>K.G.G.P Bimsara</b></h3>
+            <p>Role: Student-02</p>
+            <p>Designed and Implemented pages:</p>
+            <p>Home Page | Table</p>
+          </div>
+        </div>
+
+        <div class="team-member" tabindex="0">
+          <img
+            class="team-member-image"
+            src="Images/Student-03/vinuthmi.webp"
+            alt="Team Member 3"
+          />
+          <div class="details">
+            <h3><b>W.M.J Vinuthmi</b></h3>
+            <p>Role: Student-03</p>
+            <p>Designed and Implemented pages:</p>
+            <p>Feedback | Team</p>
+          </div>
+        </div>
+
+        <div class="team-member" tabindex="0">
+          <img
+            class="team-member-image"
+            src="Images/Student-03/yashmi.png"
+            alt="Team Member 4"
+          />
+          <div class="details">
+            <h3><b>W.A.Y.G Kalpage</b></h3>
+            <p>Role: Student-04</p>
+            <p>Designed and Implemented pages:</p>
+            <p>User Profile | Sitemap</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-col footer-logo-col">
+          <img
+            src="Images/Student-02/logo.png"
+            alt="Life Below Water Logo"
+            class="footer-logo"
+          />
+          <span class="footer-site-name">Life Below Water</span>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="profile.html">Profile</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="ocean_conservation.html">Ocean Cleanup</a></li>
+            <li><a href="marine_biodiversity.html">Marine Life</a></li>
+            <li><a href="content_ST4.html">Conservation</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-credit">
+        Created by Student_03 |
+        <a href="Page_Editors/Student-03/pageEditor_ST3.html" target="_blank"
+          >Page Editor</a
+        >
+      </p>
+    </footer>
+    <a href="#" class="go-top" aria-label="Go to top">⬆️</a>
+
+    <script>
+      const goTopButton = document.querySelector(".go-top");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+          goTopButton.style.display = "block";
+        } else {
+          goTopButton.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

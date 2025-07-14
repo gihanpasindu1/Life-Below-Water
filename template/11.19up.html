@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Website Structure Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #fafbfc;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(90deg, #388e3c 70%, #4caf50 100%);
+      padding: 0 0 0 20px;
+      display: flex;
+      align-items: center;
+      height: 70px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo img {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: #fff;
+      border: 2px solid #fff;
+    }
+    .logo span {
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+    }
+    nav {
+      margin-left: auto;
+      margin-right: 30px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 18px;
+      transition: background 0.2s;
+    }
+    nav a.active, nav a:hover {
+      background: rgba(255,255,255,0.15);
+    }
+    main {
+      padding: 30px 0 60px 0;
+      background: #fff;
+      min-height: 100vh;
+    }
+    .sitemap-title {
+      text-align: center;
+      font-size: 2.3rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      margin-top: 10px;
+      letter-spacing: 1px;
+      color: #263238;
+    }
+    .sitemap-flow {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+    }
+    .sitemap-row {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 40px;
+      position: relative;
+      z-index: 1;
+    }
+    .sitemap-node {
+      min-width: 120px;
+      padding: 13px 18px;
+      border-radius: 16px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-align: center;
+      box-shadow: 0 2px 12px rgba(60,60,60,0.07);
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: transform 0.2s, box-shadow 0.2s;
+      position: relative;
+      z-index: 2;
+      user-select: none;
+      outline: none;
+    }
+    .sitemap-node:focus, .sitemap-node:hover {
+      transform: scale(1.06);
+      box-shadow: 0 4px 18px rgba(60,60,60,0.13);
+      border-color: #263238;
+    }
+    /* Color coding */
+    .home { background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%); color: #263238;}
+    .main { background: linear-gradient(90deg, #1976d2 0%, #00c6fb 100%);}
+    .content { background: linear-gradient(90deg, #26c6da 0%, #00acc1 100%);}
+    .student { background: linear-gradient(90deg, #26a69a 0%, #81c784 100%);}
+    .editor { background: linear-gradient(90deg, #ba68c8 0%, #f06292 100%);}
+    .sitemap { background: linear-gradient(90deg, #ff9800 0%, #ffb300 100%); color: #222;}
+    .current { border: 3px solid #ff1744; position: relative;}
+    .current::after {
+      content: "YOU ARE HERE";
+      position: absolute;
+      left: 50%; bottom: -28px;
+      transform: translateX(-50%);
+      background: #ff1744;
+      color: #fff;
+      font-size: 0.85rem;
+      border-radius: 12px;
+      padding: 2px 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      z-index: 3;
+    }
+    /* Lines between nodes */
+    .connector {
+      position: absolute;
+      width: 2px;
+      background: #bdbdbd;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 0;
+    }
+    .horizontal {
+      height: 2px;
+      width: 100%;
+      background: #bdbdbd;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: 0;
+    }
+    /* Responsive */
+    @media (max-width: 900px) {
+      .sitemap-row { flex-wrap: wrap; gap: 12px; }
+      .sitemap-node { min-width: 90px; font-size: 1rem; padding: 10px 8px;}
+    }
+    @media (max-width: 600px) {
+      .sitemap-title { font-size: 1.3rem;}
+      .sitemap-row { gap: 6px; margin-bottom: 25px;}
+      .sitemap-node { min-width: 70px; font-size: 0.93rem; padding: 8px 4px;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/3524/3524636.png" alt="Logo">
+      <span>Health Well</span>
+    </div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="table.html">Resources</a>
+      <a href="profile.html">Profile</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="sitemap.html" class="active">Sitemap</a>
+      <a href="team.html">Team</a>
+    </nav>
+  </header>
+  <main>
+    <h2 class="sitemap-title">Website Structure Map</h2>
+    <div class="sitemap-flow">
+      <!-- Row 1: Home -->
+      <div class="sitemap-row" style="margin-bottom: 20px;">
+        <div class="sitemap-node home" tabindex="0" onclick="window.location.href='home.html'">Home</div>
+      </div>
+      <!-- Connectors -->
+      <div style="height: 30px; position: relative;">
+        <div class="connector" style="height: 30px; top: 0; left: 50%;"></div>
+      </div>
+      <!-- Row 2: Main Navigation -->
+      <div class="sitemap-row">
+        <div class="sitemap-node main" tabindex="0" onclick="window.location.href='splash.html'">splash Screen</div>
+        <div class="sitemap-node main" tabindex="0" onclick="window.location.href='volunteer.html'">Volunteer</div>
+        <div class="sitemap-node main" tabindex="0" onclick="window.location.href='table.html'">Data Table</div>
+        <div class="sitemap-node main" tabindex="0" onclick="window.location.href='team.html'">Team</div>
+        <div class="sitemap-node main" tabindex="0" onclick="window.location.href='feedback.html'">Feedback</div>
+        <div class="sitemap-node main" tabindex="0" onclick="window.location.href='profile.html'">Profile</div>
+        <div class="sitemap-node main" tabindex="0" onclick="window.location.href='sitemap.html'">SiteMap</div>
+      </div>
+      <!-- Connectors -->
+      <div style="height: 30px; position: relative;">
+        <div class="connector" style="height: 30px; top: 0; left: 14.2%;"></div>
+        <div class="connector" style="height: 30px; top: 0; left: 28.5%;"></div>
+        <div class="connector" style="height: 30px; top: 0; left: 42.8%;"></div>
+        <div class="connector" style="height: 30px; top: 0; left: 57.1%;"></div>
+        <div class="connector" style="height: 30px; top: 0; left: 71.4%;"></div>
+        <div class="connector" style="height: 30px; top: 0; left: 85.7%;"></div>
+      </div>
+      <!-- Row 3: Student Content -->
+      <div class="sitemap-row">
+        <div class="sitemap-node content" tabindex="0">Student 1 Content</div>
+        <div class="sitemap-node content" tabindex="0">Student 2 Content</div>
+        <div class="sitemap-node content" tabindex="0">Student 3 Content</div>
+        <div class="sitemap-node content" tabindex="0">Student 4 Content</div>
+      </div>
+      <!-- Connectors -->
+      <div style="height: 30px; position: relative;">
+        <div class="connector" style="height: 30px; top: 0; left: 25%;"></div>
+        <div class="connector" style="height: 30px; top: 0; left: 50%;"></div>
+        <div class="connector" style="height: 30px; top: 0; left: 75%;"></div>
+      </div>
+      <!-- Row 4: Editors/Validation -->
+      <div class="sitemap-row">
+        <div class="sitemap-node student" tabindex="0">Editor 1</div>
+        <div class="sitemap-node student" tabindex="0">Validation 1</div>
+        <div class="sitemap-node student" tabindex="0">Editor 2</div>
+        <div class="sitemap-node student" tabindex="0">Validation 2</div>
+        <div class="sitemap-node student" tabindex="0">Editor 3</div>
+        <div class="sitemap-node student" tabindex="0">Validation 3</div>
+        <div class="sitemap-node student" tabindex="0">Editor 4</div>
+        <div class="sitemap-node student" tabindex="0">Validation 4</div>
+      </div>
+      <!-- Row 5: Sitemap Current -->
+      <div class="sitemap-row" style="margin-top: 30px;">
+        <div class="sitemap-node sitemap current" tabindex="0">Sitemap (Current)</div>
+      </div>
+    </div>
+  </main>
+  <footer style="text-align:center; padding: 20px 0; background:#f4f6f8; color:#888; font-size:0.97rem;">
+    &copy; 2025 Health Well. All rights reserved.
+  </footer>
+</body>
+</html>

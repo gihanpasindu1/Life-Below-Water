@@ -1,0 +1,296 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f9ff;
+  color: #111;
+  line-height: 1.6;
+}
+
+/* ===== Wrapper ===== */
+.wrapper {
+  max-width: 1200px;
+  margin: 0px;
+  margin-left: auto;
+
+  padding: 20px;
+}
+
+/* ===== Header and Navbar ===== */
+header {
+  background-color: rgba(201, 232, 251, 0.9);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  position: relative;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #004c99;
+  font-weight: bold;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+/* Underline hover effect */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 0%;
+  background-color: rgb(0, 0, 0);
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #061682;
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ===== Main ===== */
+
+main {
+  padding: 60px 40px;
+  margin-top: 10vh;
+  background-color: #e0f7ff;
+}
+
+/* ===== Buttons ===== */
+button {
+  background-color: #007acc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #005f99;
+}
+
+/* ===== Cards / Tiles ===== */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Images ===== */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+/* ===== Utility Classes ===== */
+.text-center {
+  text-align: center;
+}
+
+/* ===== logo ===== */
+
+header .logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #004c99;
+}
+
+header .logo img {
+  scale: 3;
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* ===== profile icon ===== */
+.profile-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 0%;
+  vertical-align: middle;
+  transition: transform 0.3s;
+}
+
+.profile-link {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url("Images/Student-02/profile_icon.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.profile-link:hover {
+  transform: scale(1.1);
+}
+
+.profile-link::after {
+  content: "Profile";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #004c99;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.profile-link:hover::after {
+  opacity: 1;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #004c99;
+  color: white;
+  padding: 40px 40px 20px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 2px;
+}
+
+footer a {
+  color: #aee;
+  text-decoration: underline;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 1 auto;
+  gap: 30px;
+}
+
+.footer-logo {
+  width: 180px;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.footer-col {
+  flex: 0 0 auto;
+  width: 200px;
+}
+
+.footer-logo-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-site-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 0;
+  line-height: 1;
+}
+
+.footer-col h4 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  border-bottom: 2px solid #aee;
+  display: inline-block;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  color: #aee;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-credit {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #bbe1ff;
+}
+/* ===== go top button ===== */
+
+.go-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #0077b6;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: none; /* hidden at first */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 999;
+}
+.go-top:hover {
+  background-color: #005f99;
+  transform: scale(1.1);
+}

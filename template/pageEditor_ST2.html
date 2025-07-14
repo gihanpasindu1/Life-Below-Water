@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Editor - K.G.G.P. Bimsara</title>
+    <link rel="stylesheet" href="../../global.css" />
+
+    <style>
+      .page-editor-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+      aside {
+        flex: 1 1 80px;
+        background: #e0f3ff;
+        padding: 20px;
+        margin-top: 20px;
+        margin-right: 10px;
+        border-radius: 8px;
+      }
+      main {
+        flex: 3 1 600px;
+        margin-top: 20px;
+      }
+      section {
+        background: white;
+        margin-bottom: 20px;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-left: 10px;
+      }
+      .stud {
+        background: #007acc;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        margin-top: 80px;
+        border-radius: 8px;
+      }
+      h2 {
+        border-bottom: 2px solid #007acc;
+        padding-bottom: 5px;
+      }
+      h2,
+      h3,
+      p {
+        margin-left: 10px;
+      }
+      .top {
+        text-align: center;
+        margin-top: 80px;
+      }
+
+      .topButton {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        z-index: 999;
+      }
+
+      .topButton img {
+        width: 100%;
+        height: auto;
+      }
+
+      .topButton:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+      li {
+        margin-left: 15px;
+      }
+
+      section[id]:before {
+        display: block;
+        content: "";
+        height: 180px;
+        margin-top: -100px;
+        visibility: hidden;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header with Navbar -->
+    <header>
+      <div class="logo">
+        <img
+          src="../../Images/Student-02/logo.png"
+          alt="Life Below Water Logo"
+        />
+        Life Below Water
+      </div>
+      <nav>
+        <a href="../../home.html">Home</a>
+        <a href="table.html">Table</a>
+        <a href="team.html">Team</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="sitemap.html">Sitemap</a>
+        <a href="profile.html" class="profile-link" title="User Profile"></a>
+      </nav>
+    </header>
+
+    <div class="stud">
+      <h2>K.G.G.P. Bimsara — Student 2</h2>
+      <p>UOW ID: 2149602 | IIT ID: 20241253</p>
+      <p>
+        Responsible for the development of the Template,Global.css file, Home,
+        Content, and Table pages
+      </p>
+    </div>
+
+    <div class="page-editor-container">
+      <!-- Sidebar on the left -->
+      <aside>
+        <h3>Developed Pages</h3>
+        <br />
+        <ul>
+          <li><a href="#template">Template</a></li>
+          <li><a href="#home">Home Page</a></li>
+          <li><a href="#content">Content Page</a></li>
+          <li><a href="#table">Table Page</a></li>
+          <li><a href="#challenges">Challenges and Lessons Learned</a></li>
+          <li><a href="#compliance">Compliance</a></li>
+          <li><a href="#ref">References</a></li>
+        </ul>
+      </aside>
+
+      <main>
+        <!-- Template section -->
+        <section id="template">
+          <h2>Template</h2>
+          <br />
+          <h3>Technical Description</h3>
+          <br />
+          <p></p>
+          <ul>
+            <li>
+              <strong>Semantic Tags</strong>: header, main, and footer are used
+              to separate content, making it easier to read and organize.
+            </li>
+            <li>
+              <strong>Navigation Bar</strong>: The nav tag helps group important
+              page links for easier site navigation.
+            </li>
+            <li>
+              <strong>Logo & Branding</strong>: The img tag adds a logo, and the
+              alt attribute helps explain the image for accessibility.
+            </li>
+            <li>
+              <strong>Lists for Links</strong>: ul and li tags are used to list
+              helpful links in the footer area.
+            </li>
+          </ul>
+          <br />
+          <br>
+
+          <h3>CSS Styling Choices (from global.css)</h3>
+          <br />
+          <ul>
+            <li>
+              <strong>Layout Control</strong>: Classes like .footer-container
+              and .logo probably use Flexbox or Grid to align items nicely.
+            </li>
+            <li>
+              <strong>Consistent Design</strong>: Classes like .footer-logo,
+              .footer-site-name, and .profile-link help keep fonts, spacing, and
+              colors consistent.
+            </li>
+            <li>
+              <strong>Responsive Design</strong>: The meta viewport tag and CSS
+              media queries help the layout work well on phones and tablets.
+            </li>
+          </ul>
+          <br />
+
+          <h3>Why These Choices Work</h3>
+          <br />
+          <ul>
+            <li>
+              Clear tags make it easier for search engines and screen readers to
+              understand the page.
+            </li>
+            <li>
+              Using separate CSS files keeps design organized and easy to
+              update.
+            </li>
+            <li>
+              Reusing classes saves time and keeps your pages looking the same.
+            </li>
+          </ul>
+
+         <br>
+
+          <h3>Validation</h3>
+          <p>
+ <a href="../../Validation/Student-02/validation_page.html#templateVal">"
+              View Template Validation</a
+            >
+          </p>
+          <br />
+          <h3>Page Link</h3>
+ <a href="../../template.html">Visit Template</a></p>
+        </section>
+
+        <!-- Home page -->
+  
+          <section id="home">
+            
+              <h2>Home Page</h2>
+              <br>
+              <h3>Technical Description</h3>
+
+              <br>
+              <ul>
+                <li>
+                  <strong>Hero Section</strong>: Animated fish and
+                  call-to-action button.
+                </li>
+                <li>
+                  <strong>Cards Layout</strong>: Four sections on marine topics
+                  (Conservation, Biodiversity, Pollution, Coral Reefs).
+                </li>
+                <li>
+                  <strong>Mission Section</strong>: Two-column layout with
+                  content and image highlighting the ocean's importance.
+                </li>
+                <li>
+                  <strong>Loader</strong>: Page loader hides after 1 second for
+                  smoother UX.
+                </li>
+              </ul>
+              <br>
+
+              <h3>CSS Styling Choices</h3>
+              <br>
+              <ul>
+                <li>Flexbox layout for cards, making it responsive.</li>
+                <li>
+                  Mission section uses a split layout for text and visuals.
+                </li>
+                <li>Animated background fish add engagement.</li>
+              </ul>
+              <br>
+
+              <h3>Why These Choices Work</h3>
+              <br>
+              <ul>
+                <li>
+                  Engaging visuals (fish) instantly convey the ocean theme.
+                </li>
+                <li>Clear cards structure for easy navigation of content.</li>
+                <li>Responsive design adapts to various screen sizes.</li>
+              </ul>
+              <br>
+
+              <h3>Accessibility</h3>
+              <ul>
+                <li>Proper alt text for all images, ensuring accessibility.</li>
+                <li>High color contrast for readability.</li>
+                <li>Clear link text and accessible navigation.</li>
+              </ul>
+              <br>
+               <h3>Validation</h3>
+          <p>
+            <a href="../../Validation/Student-02/validation_page.html#homeVal">View Home Page Validation</a>
+          </p>
+          <br />
+          <h3>Page Link</h3>
+          <p><a href="../../home.html">Visit Home Page</a></p>
+        </section>
+
+
+          
+           
+
+         
+          <br />
+         
+<!-- Template Section -->
+<!-- Template Section -->
+<section id="content" >
+  
+    <h2>Content Page</h2>
+  
+
+  
+    <h3>Overview</h3>
+    <br>
+    <ul>
+      <li><strong>Main Purpose</strong>: The content page provides an in-depth look at various topics related to ocean conservation, plastic pollution, marine biodiversity, and more.</li>
+      <li><strong>Structure</strong>: The page includes sections such as "Explore the Ocean," "Our Mission," and various resource links that guide the user to further content.</li>
+      <li><strong>Images</strong>: High-quality images and GIFs (like fish and octopus) are used to engage the user visually, connecting the theme to the content.</li>
+      <li><strong>Call to Action</strong>: Buttons like "Learn More" and "Meet the Team" provide the user with next steps.</li>
+    </ul>
+    <br>
+
+    <h3>CSS Styling Choices</h3>
+    <br>
+    <ul>
+      <li>Use of large hero images to grab attention and support the visual storytelling.</li>
+      <li>Cards in a grid layout for key topics, allowing easy navigation between sections.</li>
+      <li>Mission section with a split layout to highlight both the text and visuals of ocean conservation efforts.</li>
+    </ul>
+
+    <br>
+    <h3>Why These Choices Work</h3>
+    <br>
+    <ul>
+      <li>The large hero image and animations (e.g., fish swimming) provide an immersive experience, keeping users engaged from the start.</li>
+      <li>Cards help break the content into digestible chunks, improving user experience on both mobile and desktop devices.</li>
+      <li>Direct calls to action help guide the user to engage with the mission or learn more about various topics.</li>
+    </ul>
+    <br>
+
+    <h3>Accessibility</h3>
+    <br>
+    <ul>
+      <li>All images have descriptive alt texts to improve accessibility for screen readers.</li>
+      <li>The page is designed to be responsive, ensuring it's usable on mobile devices.</li>
+      <li>Buttons and links are clearly marked and accessible using keyboard navigation.</li>
+    </ul>
+    <br>
+    <h3>Validation</h3>
+          <p>
+            <a href="../../Validation/Student-02/validation_page.html#contentVal">View content Page Validation</a>
+          </p>
+          <br />
+          <h3>Page Link</h3>
+          <p><a href="../../Plastic_Pollution.html">Visit content Page</a></p>
+        </section>
+
+
+ 
+
+<!-- End Template Section -->
+
+
+<section id="table">
+
+    <h2>Table Page</h2>
+    <hr>
+    <br>
+
+    <h3>Technical Description</h3>
+    <br>
+    <ul>
+      <li><strong>Table Layout</strong>: A table showing the activity levels of ocean cleanup organizations across various regions (Pacific, Indian, Atlantic, Southern).</li>
+      <li><strong>Header</strong>: Includes logos for The Ocean Cleanup, Sea Shepherd, and Plastic Bank, linked to their respective websites.</li>
+      <li><strong>Legend</strong>: A table legend explains the meaning of the icons used to represent the activity level (✔️, ❌, ➖).</li>
+      <li><strong>Footer</strong>: Links to each organization’s website for more information.</li>
+    </ul>
+    <br>
+
+    <h3>CSS Styling Choices</h3>
+    <br>
+    <ul>
+      <li>Table layout with a clean, simple design to prioritize readability.</li>
+      <li>Icons used for status (✔️, ❌, ➖) with tooltips for additional information.</li>
+      <li>Responsive design ensures the table remains accessible on different screen sizes.</li>
+    </ul>
+    <br>
+
+    <h3>Why These Choices Work</h3>
+    <br>
+    <ul>
+      <li>Table format allows easy comparison of data across regions.</li>
+      <li>Clear visual indicators (icons) for each organization’s activity level help users quickly understand the information.</li>
+      <li>External links to organizations' websites for users to learn more.</li>
+    </ul>
+<br>
+    <h3>Accessibility</h3>
+    <br>
+    <ul>
+      <li>ARIA labels and descriptions for table rows, headers, and tooltips.</li>
+      <li>Clear contrast for text and background for better readability.</li>
+      <li>Interactive elements are keyboard accessible.</li>
+    </ul>
+
+    <h3>Validation</h3>
+    <ul>
+      <li>HTML5 and CSS standards followed.</li>
+      <li>Ensure accessibility by using W3C validation tools.</li>
+    </ul>
+    <br>
+     <h3>Validation</h3>
+     <br>
+     
+          <p>
+            <a href="validation_ST2.html#templateVal"
+              >View Template Validation</a
+            >
+          </p>
+          <br />
+          <h3>Page Link</h3>
+          <p><a href="template.html">Visit Template</a></p>
+        
+
+
+</section>
+<!-- End Template Section -->
+
+
+        <!-- Challenges -->
+        <section id="challenges">
+          <h2>Challenges and Lessons Learned</h2>
+          <br />
+          <p>
+            Challenges were encountered in maintaining consistent styling across
+            pages while implementing Flexbox for various layouts. Ensuring
+            responsiveness across devices required multiple iterations. Key
+            lessons included the application of semantic HTML, adherence to
+            accessibility standards, and the development of reusable CSS.
+          </p>
+        </section>
+
+        <!-- Compliance -->
+        <section id="compliance">
+          <h2>Compliance</h2>
+          <br />
+          <p>
+            The development process adhered to WCAG guidelines for accessibility
+            and semantic HTML5 standards. All pages were validated using W3C
+            tools to ensure compliance with web publishing standards.
+          </p>
+        </section>
+
+        <!-- References -->
+        <section id="ref">
+          <h2>References</h2>
+          <br />
+          <ul>
+            <li>
+              Duckett, J. (2011).
+              <i>HTML and CSS: Design and Build Websites</i>. Wiley.
+            </li>
+            <li>
+              W3C (2024). HTML & CSS Specifications. Available at:
+              <a href="https://www.w3.org/">w3.org</a>
+            </li>
+            <li>
+              W3C Web Accessibility Initiative (2024). Web Content Accessibility
+              Guidelines (WCAG) 2.1. Available at:
+              <a href="https://www.w3.org/WAI/standards-guidelines/wcag/"
+                >w3.org/WAI</a
+              >
+            </li>
+            <li>
+              Mozilla Developer Network (2024). CSS Flexbox. Available at:
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout"
+                >developer.mozilla.org</a
+              >
+            </li>
+            <li>
+              AI-Generated Images (2025). Images used in the Home, Content, and
+              Table pages were generated using an AI image generation tool to
+              align with the ocean conservation theme. [Tool name and specific
+              citation details should be added if available, e.g., MidJourney,
+              DALL-E, or other AI tool documentation].
+            </li>
+          </ul>
+        </section>
+        <a href="#" class="go-top" aria-label="Go to top">⬆️</a>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-col footer-logo-col">
+          <img
+            src="../../Images/Student-02/logo.png"
+            alt="Life Below Water Logo"
+            class="footer-logo"
+          />
+          <span class="footer-site-name">Life Below Water</span>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="profile.html">Profile</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="content_ST2.html">Ocean Cleanup</a></li>
+            <li><a href="content_ST3.html">Marine Life</a></li>
+            <li><a href="content_ST4.html">Conservation</a></li>
+            <li><a href="content_ST5.html">Get Involved</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-credit">
+        Created by Student_02 |
+        <a href="Page_Editors/Student-02/pageEditor_ST2.html" target="_blank">Page Editor</a>
+      </p>
+    </footer>
+    <script>
+      const goTopButton = document.querySelector(".go-top");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+          goTopButton.style.display = "block";
+        } else {
+          goTopButton.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

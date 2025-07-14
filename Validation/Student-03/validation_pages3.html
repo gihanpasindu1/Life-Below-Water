@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation Report - W.M Janithya Vinithmi</title>
+    <link rel="stylesheet" href="../../Styles/Student-03/validstyle.css" />
+    <link rel="stylesheet" href="../../global.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="../../Images/Student-02/logo.png"
+          alt="Life Below Water Logo"
+        />
+        Life Below Water
+      </div>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="table.html">Table</a>
+        <a href="team.html">Team</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="sitemap.html">Sitemap</a>
+        <a href="profile.html" class="profile-link" title="user Profile"></a>
+      </nav>
+    </header>
+
+    <section class="student">
+      <h2>W.M Janithya Vinuthmi, Student 3</h2>
+      <p>Responsible for: Feedback page and Team page</p>
+    </section>
+
+    <div class="container">
+      <main>
+        <section>
+          <h2 id="feedbackValidation">Feedback Validation Report</h2>
+
+          <hr />
+          <br />
+
+          <p>
+            I validated the feedback page using the W3C validator and fixed
+            several issues.Earlier corrections tackled issues such as
+            positioning legend elements as the first child of fieldset,
+            including missing alt attributes for images, removing duplicate IDs,
+            and deleting invalid name attributes from submit buttons. Recent
+            updates addressed embedding img elements within li tags in ul lists
+            and eliminating br tags from ol elements to meet HTML5 requirements.
+          </p>
+          <img
+            src="../../Images/Student-03/Validation/Feedback.png"
+            alt="Validation of Feedback"
+          />
+          <br />
+          <h4>Back to Page Editor</h4>
+          <p>
+            <a href="../../Page_Editors/Student-03/pageEditor_ST3.html#feedback"
+              >Return to Template Editor</a
+            >
+          </p>
+        </section>
+        <section>
+          <h2 id="teamValidation">Team Page Validation Report</h2>
+          <hr />
+          <br />
+          <p>
+            I validated the Team page using the W3C Markup Validator by
+            uploading the HTML file. I had previously made some errors like
+            missing alt attributes for images and incorrect nesting of elements.
+            The validator helped me spot these issues, and I corrected them. I
+            also updated the layout using semantic div s with a grid structure.
+            After rechecking, the page now passes HTML5 validation with improved
+            accessibility and proper structure.
+          </p>
+          <img
+            src="../../Images/Student-03/Validation/Team.png"
+            alt="Validation of Team"
+          />
+          <br />
+          <h4>Back to Page Editor</h4>
+          <p>
+            <a href="../../Page_Editors/Student-03/pageEditor_ST3.html#team"
+              >Return to Home Page Editor</a
+            >
+          </p>
+        </section>
+
+        <section>
+          <h2 id="contentValidation">Content Page Validation Report</h2>
+          <hr />
+          <br />
+          <p>
+            I validated the Content page using the W3C Markup Validator by
+            uploading the HTML file. Earlier, the page had several issues like
+            missing alt text for images, unclosed tags, and the use of b and i
+            instead of semantic tags like strong and em. The validator helped
+            identify these problems, and I corrected them by using proper
+            semantic HTML, closing all tags correctly, and improving
+            accessibility. After rechecking, the page now passes HTML5
+            validation and follows best practices.
+          </p>
+          <img
+            src="../../Images/Student-03/Validation/Content.png"
+            alt="Validation of Content Page"
+          />
+          <br />
+
+          <h3>Back to Page Editor</h3>
+          <p>
+            <a href="../../Page_Editors/Student-03/pageEditor_ST3.html#content"
+              >Return to Content Page Editor</a
+            >
+          </p>
+        </section>
+
+        <a href="#" class="go-top" aria-label="Go to top">⬆️</a>
+      </main>
+
+      <aside>
+        <h3>Core Pages Developed:</h3>
+        <ul class="top-level-ul">
+          <li>W.M Janithya Vinuthmi</li>
+          <ul>
+            <li><a href="#feedbackValidation">Feedback Page Validation</a></li>
+            <li><a href="#teamValidation">Team Page Validation</a></li>
+
+            <li><a href="#contentValidation">Content Page Validation</a></li>
+          </ul>
+        </ul>
+      </aside>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-col footer-logo-col">
+          <img
+            src="/Images/Student-02/logo.png"
+            alt="Life Below Water Logo"
+            class="footer-logo"
+          />
+          <span class="footer-site-name">Life Below Water</span>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="profile.html">Profile</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="content_ST2.html">Ocean Cleanup</a></li>
+            <li><a href="content_ST3.html">Marine Life</a></li>
+            <li><a href="content_ST4.html">Conservation</a></li>
+            <li><a href="content_ST5.html">Get Involved</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-credit">
+        Created by Student_03 |
+        <a
+          href="../../Page_Editors/Student-03/pageEditor_ST3.html"
+          target="_blank"
+          >Page Editor</a
+        >
+      </p>
+    </footer>
+    <script>
+      const goTopButton = document.querySelector(".go-top");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+          goTopButton.style.display = "block";
+        } else {
+          goTopButton.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

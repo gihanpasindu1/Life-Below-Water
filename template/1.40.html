@@ -1,0 +1,241 @@
+<style>
+  .svg-sitemap-container {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+    margin-top: 32px;
+  }
+  .sitemap-node {
+    cursor: pointer;
+    outline: none;
+    transition: filter 0.2s, stroke 0.2s;
+    stroke: #fff;
+    stroke-width: 2;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.13));
+  }
+  .sitemap-node:hover,
+  .sitemap-node:focus {
+    filter: drop-shadow(0 0 12px #ffeb3b) drop-shadow(0 2px 8px rgba(0,0,0,0.13));
+    stroke: #ffeb3b;
+  }
+  .sitemap-label {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    pointer-events: none;
+    user-select: none;
+    fill: #fff;
+  }
+  .sitemap-label-dark {
+    fill: #222;
+  }
+  .sitemap-badge {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    fill: #fff;
+    pointer-events: none;
+    user-select: none;
+  }
+</style>
+
+<div class="svg-sitemap-container">
+<svg viewBox="0 0 1200 600" width="1100" height="570" role="img" aria-label="Sitemap diagram for Life Below Water website">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="green-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#43e97b"/>
+      <stop offset="100%" stop-color="#38f9d7"/>
+    </linearGradient>
+    <linearGradient id="blue-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3a8dde"/>
+      <stop offset="100%" stop-color="#5f2eea"/>
+    </linearGradient>
+    <linearGradient id="teal-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1de9b6"/>
+      <stop offset="100%" stop-color="#00bfae"/>
+    </linearGradient>
+    <linearGradient id="pink-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f857a6"/>
+      <stop offset="100%" stop-color="#ff5858"/>
+    </linearGradient>
+    <linearGradient id="orange-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffb347"/>
+      <stop offset="100%" stop-color="#ffcc33"/>
+    </linearGradient>
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <!-- Connecting lines -->
+  <!-- Home to first row -->
+  <line x1="600" y1="90" x2="250" y2="180" stroke="#bbb" stroke-width="3"/>
+  <line x1="600" y1="90" x2="375" y2="180" stroke="#bbb" stroke-width="3"/>
+  <line x1="600" y1="90" x2="500" y2="180" stroke="#bbb" stroke-width="3"/>
+  <line x1="600" y1="90" x2="625" y2="180" stroke="#bbb" stroke-width="3"/>
+  <line x1="600" y1="90" x2="750" y2="180" stroke="#bbb" stroke-width="3"/>
+  <line x1="600" y1="90" x2="875" y2="180" stroke="#bbb" stroke-width="3"/>
+  <line x1="600" y1="90" x2="1000" y2="180" stroke="#bbb" stroke-width="3"/>
+  <line x1="600" y1="90" x2="1125" y2="180" stroke="#bbb" stroke-width="3"/>
+  <!-- First row to second row -->
+  <line x1="250" y1="220" x2="350" y2="280" stroke="#bbb" stroke-width="2"/>
+  <line x1="375" y1="220" x2="475" y2="280" stroke="#bbb" stroke-width="2"/>
+  <line x1="625" y1="220" x2="725" y2="280" stroke="#bbb" stroke-width="2"/>
+  <line x1="750" y1="220" x2="825" y2="280" stroke="#bbb" stroke-width="2"/>
+  <!-- Second row to third row -->
+  <line x1="350" y1="320" x2="300" y2="390" stroke="#bbb" stroke-width="2"/>
+  <line x1="350" y1="320" x2="400" y2="390" stroke="#bbb" stroke-width="2"/>
+  <line x1="475" y1="320" x2="450" y2="390" stroke="#bbb" stroke-width="2"/>
+  <line x1="475" y1="320" x2="500" y2="390" stroke="#bbb" stroke-width="2"/>
+  <line x1="725" y1="320" x2="700" y2="390" stroke="#bbb" stroke-width="2"/>
+  <line x1="725" y1="320" x2="750" y2="390" stroke="#bbb" stroke-width="2"/>
+  <line x1="825" y1="320" x2="800" y2="390" stroke="#bbb" stroke-width="2"/>
+  <line x1="825" y1="320" x2="850" y2="390" stroke="#bbb" stroke-width="2"/>
+  <!-- Home to sitemap (bottom) -->
+  <line x1="600" y1="140" x2="600" y2="500" stroke="#bbb" stroke-width="2"/>
+  <!-- Sitemap to badge -->
+  <line x1="600" y1="540" x2="600" y2="580" stroke="#bbb" stroke-width="2"/>
+  <!-- Nodes -->
+  <!-- Home -->
+  <a xlink:href="home.html" tabindex="0">
+    <rect class="sitemap-node" x="530" y="60" rx="18" ry="18" width="140" height="50"
+      fill="url(#green-gradient)" filter="url(#shadow)"
+      aria-label="Home page" alt="Home page node"/>
+    <text class="sitemap-label sitemap-label-dark" x="600" y="93" text-anchor="middle">Home</text>
+  </a>
+  <!-- First row (main pages) -->
+  <a xlink:href="splash.html" tabindex="0">
+    <rect class="sitemap-node" x="200" y="180" rx="16" ry="16" width="100" height="40"
+      fill="url(#blue-gradient)" filter="url(#shadow)"
+      aria-label="Splash Screen" alt="Splash Screen node"/>
+    <text class="sitemap-label" x="250" y="206" text-anchor="middle">splash Screen</text>
+  </a>
+  <a xlink:href="volunteer.html" tabindex="0">
+    <rect class="sitemap-node" x="325" y="180" rx="16" ry="16" width="100" height="40"
+      fill="url(#blue-gradient)" filter="url(#shadow)"
+      aria-label="Volunteer page" alt="Volunteer page node"/>
+    <text class="sitemap-label" x="375" y="206" text-anchor="middle">Volunteer</text>
+  </a>
+  <a xlink:href="table.html" tabindex="0">
+    <rect class="sitemap-node" x="450" y="180" rx="16" ry="16" width="100" height="40"
+      fill="url(#blue-gradient)" filter="url(#shadow)"
+      aria-label="Data Table" alt="Data Table node"/>
+    <text class="sitemap-label" x="500" y="206" text-anchor="middle">Data Table</text>
+  </a>
+  <a xlink:href="team.html" tabindex="0">
+    <rect class="sitemap-node" x="575" y="180" rx="16" ry="16" width="100" height="40"
+      fill="url(#blue-gradient)" filter="url(#shadow)"
+      aria-label="Team page" alt="Team page node"/>
+    <text class="sitemap-label" x="625" y="206" text-anchor="middle">Team</text>
+  </a>
+  <a xlink:href="feedback.html" tabindex="0">
+    <rect class="sitemap-node" x="700" y="180" rx="16" ry="16" width="100" height="40"
+      fill="url(#blue-gradient)" filter="url(#shadow)"
+      aria-label="Feedback page" alt="Feedback page node"/>
+    <text class="sitemap-label" x="750" y="206" text-anchor="middle">Feedback</text>
+  </a>
+  <a xlink:href="profile.html" tabindex="0">
+    <rect class="sitemap-node" x="825" y="180" rx="16" ry="16" width="100" height="40"
+      fill="url(#blue-gradient)" filter="url(#shadow)"
+      aria-label="Profile page" alt="Profile page node"/>
+    <text class="sitemap-label" x="875" y="206" text-anchor="middle">Profile</text>
+  </a>
+  <a xlink:href="sitemap.html" tabindex="0">
+    <rect class="sitemap-node" x="950" y="180" rx="16" ry="16" width="100" height="40"
+      fill="url(#blue-gradient)" filter="url(#shadow)"
+      aria-label="Sitemap page" alt="Sitemap page node"/>
+    <text class="sitemap-label" x="1000" y="206" text-anchor="middle">SiteMap</text>
+  </a>
+  <!-- Second row (student content) -->
+  <a xlink:href="content_ST1.html" tabindex="0">
+    <rect class="sitemap-node" x="320" y="280" rx="14" ry="14" width="60" height="40"
+      fill="url(#teal-gradient)" filter="url(#shadow)"
+      aria-label="Student 1 Content" alt="Student 1 Content node"/>
+    <text class="sitemap-label" x="350" y="306" text-anchor="middle" font-size="15">Student 1 Content</text>
+  </a>
+  <a xlink:href="content_ST2.html" tabindex="0">
+    <rect class="sitemap-node" x="445" y="280" rx="14" ry="14" width="60" height="40"
+      fill="url(#teal-gradient)" filter="url(#shadow)"
+      aria-label="Student 2 Content" alt="Student 2 Content node"/>
+    <text class="sitemap-label" x="475" y="306" text-anchor="middle" font-size="15">Student 2 Content</text>
+  </a>
+  <a xlink:href="content_ST3.html" tabindex="0">
+    <rect class="sitemap-node" x="695" y="280" rx="14" ry="14" width="60" height="40"
+      fill="url(#teal-gradient)" filter="url(#shadow)"
+      aria-label="Student 3 Content" alt="Student 3 Content node"/>
+    <text class="sitemap-label" x="725" y="306" text-anchor="middle" font-size="15">Student 3 Content</text>
+  </a>
+  <a xlink:href="content_ST4.html" tabindex="0">
+    <rect class="sitemap-node" x="795" y="280" rx="14" ry="14" width="60" height="40"
+      fill="url(#teal-gradient)" filter="url(#shadow)"
+      aria-label="Student 4 Content" alt="Student 4 Content node"/>
+    <text class="sitemap-label" x="825" y="306" text-anchor="middle" font-size="15">Student 4 Content</text>
+  </a>
+  <!-- Third row (editors/validation) -->
+  <a xlink:href="pageEditor_ST1.html" tabindex="0">
+    <rect class="sitemap-node" x="270" y="390" rx="10" ry="10" width="60" height="36"
+      fill="url(#pink-gradient)" filter="url(#shadow)"
+      aria-label="Editor 1" alt="Editor 1 node"/>
+    <text class="sitemap-label" x="300" y="414" text-anchor="middle" font-size="14">Editor 1</text>
+  </a>
+  <a xlink:href="validation_ST1.html" tabindex="0">
+    <rect class="sitemap-node" x="370" y="390" rx="10" ry="10" width="60" height="36"
+      fill="url(#pink-gradient)" filter="url(#shadow)"
+      aria-label="Validation 1" alt="Validation 1 node"/>
+    <text class="sitemap-label" x="400" y="414" text-anchor="middle" font-size="14">Validation 1</text>
+  </a>
+  <a xlink:href="pageEditor_ST2.html" tabindex="0">
+    <rect class="sitemap-node" x="420" y="390" rx="10" ry="10" width="60" height="36"
+      fill="url(#pink-gradient)" filter="url(#shadow)"
+      aria-label="Editor 2" alt="Editor 2 node"/>
+    <text class="sitemap-label" x="450" y="414" text-anchor="middle" font-size="14">Editor 2</text>
+  </a>
+  <a xlink:href="validation_ST2.html" tabindex="0">
+    <rect class="sitemap-node" x="470" y="390" rx="10" ry="10" width="60" height="36"
+      fill="url(#pink-gradient)" filter="url(#shadow)"
+      aria-label="Validation 2" alt="Validation 2 node"/>
+    <text class="sitemap-label" x="500" y="414" text-anchor="middle" font-size="14">Validation 2</text>
+  </a>
+  <a xlink:href="pageEditor_ST3.html" tabindex="0">
+    <rect class="sitemap-node" x="670" y="390" rx="10" ry="10" width="60" height="36"
+      fill="url(#pink-gradient)" filter="url(#shadow)"
+      aria-label="Editor 3" alt="Editor 3 node"/>
+    <text class="sitemap-label" x="700" y="414" text-anchor="middle" font-size="14">Editor 3</text>
+  </a>
+  <a xlink:href="validation_ST3.html" tabindex="0">
+    <rect class="sitemap-node" x="720" y="390" rx="10" ry="10" width="60" height="36"
+      fill="url(#pink-gradient)" filter="url(#shadow)"
+      aria-label="Validation 3" alt="Validation 3 node"/>
+    <text class="sitemap-label" x="750" y="414" text-anchor="middle" font-size="14">Validation 3</text>
+  </a>
+  <a xlink:href="pageEditor_ST4.html" tabindex="0">
+    <rect class="sitemap-node" x="770" y="390" rx="10" ry="10" width="60" height="36"
+      fill="url(#pink-gradient)" filter="url(#shadow)"
+      aria-label="Editor 4" alt="Editor 4 node"/>
+    <text class="sitemap-label" x="800" y="414" text-anchor="middle" font-size="14">Editor 4</text>
+  </a>
+  <a xlink:href="validation_ST4.html" tabindex="0">
+    <rect class="sitemap-node" x="820" y="390" rx="10" ry="10" width="60" height="36"
+      fill="url(#pink-gradient)" filter="url(#shadow)"
+      aria-label="Validation 4" alt="Validation 4 node"/>
+    <text class="sitemap-label" x="850" y="414" text-anchor="middle" font-size="14">Validation 4</text>
+  </a>
+  <!-- Sitemap (current) node at bottom with badge -->
+  <a xlink:href="sitemap.html" tabindex="0">
+    <rect class="sitemap-node" x="500" y="500" rx="20" ry="20" width="200" height="50"
+      fill="url(#orange-gradient)" filter="url(#shadow)"
+      aria-label="Sitemap (Current)" alt="Sitemap (Current) node"/>
+    <text class="sitemap-label sitemap-label-dark" x="600" y="532" text-anchor="middle" font-size="20">Sitemap (Current)</text>
+    <!-- Red badge (circle) -->
+    <circle cx="690" cy="510" r="10" fill="#ff1744" stroke="#fff" stroke-width="2"/>
+    <text x="690" y="514" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">✓</text>
+  </a>
+  <!-- Badge for "You are here" -->
+  <rect x="540" y="550" rx="12" ry="12" width="120" height="32"
+    fill="#222" filter="url(#shadow)"/>
+  <text class="sitemap-badge" x="600" y="572" text-anchor="middle">★ YOU ARE HERE</text>
+</svg>
+</div>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life Below Water</title>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="Styles/Student-02/home_style.css" />
+
+    <script>
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("content").style.display = "block";
+        }, 1000);
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Header with Navbar -->
+
+    <div class="loader-overlay" id="loader">
+      <div class="spinner"></div>
+    </div>
+
+    <header>
+      <div class="logo">
+        <img src="Images/Student-02/logo.png" alt="Life Below Water Logo" />
+
+        Life Below Water
+      </div>
+      <nav>
+        <a href="home.html">Home</a>
+
+        <a href="table.html">Table</a>
+        <a href="team.html">Team</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="sitemap.html">Sitemap</a>
+        <a href="profile.html" class="profile-link" title="user Profile"></a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <img
+        class="tuna1 fish fish1"
+        src="Images/Student-02/tuna.gif"
+        alt="Fish swimming"
+      />
+      <img
+        class="tuna2 fish fish1"
+        src="Images/Student-02/tuna.gif"
+        alt="Fish swimming"
+      />
+      <img
+        class="octopus fish fish1"
+        src="Images/Student-02/octopus.gif"
+        alt="Fish swimming"
+      />
+
+      <h1>Life Below Water</h1>
+
+      <p>
+        Conserving and sustaining our oceans for future generations under the
+        United Nations Sustainable Development Goal 14.
+      </p>
+      <a href="https://globalgoals.org/goals/14-life-below-water/">
+        <button>Learn More</button>
+      </a>
+    </section>
+
+    <main>
+      <h2 style="text-align: center">Explore the Ocean with Us</h2>
+      <div class="cards">
+        <div class="card card1">
+          <h3>Ocean Conservation</h3>
+          <p>Protecting marine ecosystems and protecting marine species.</p>
+          <a href="ocean_conservation.html" class="button">Explore</a>
+        </div>
+        <div class="card card2">
+          <h3>Marine Biodiversity</h3>
+          <p>Addressing the diversity of marine species.</p>
+          <a href="marine_biodiversity.html" class="button">Learn More</a>
+        </div>
+        <div class="card card3">
+          <h3>Plastic Pollution</h3>
+          <p>Addressing the impact of plastic debris on oceans.</p>
+          <a href="Plastic_Pollution.html" class="button"> Read More </a>
+        </div>
+        <div class="card card4">
+          <h3>Coral Reefs</h3>
+          <p>Protecting and restoring coral reef ecosystems.</p>
+          <a href="Coral_Reef.html" class="button">Read More</a>
+        </div>
+      </div>
+
+      <section class="mission-section">
+        <div class="mission-content">
+          <h2>Our Mission</h2>
+          <p>
+            Our oceans are the heart of our planet. Covering over 70% of Earth's
+            surface, they provide food, regulate our climate, and support
+            millions of species — including us.
+          </p>
+          <p>
+            At <strong>Life Below Water</strong>, we are committed to raising
+            awareness and taking action to protect our oceans under the
+            framework of the
+            <a href="https://sdgs.un.org/goals/goal14" target="_blank"
+              >United Nations Sustainable Development Goal 14</a
+            >.
+          </p>
+          <p>
+            From tackling plastic pollution to conserving coral reefs and marine
+            biodiversity, our mission is to empower individuals and communities
+            to be stewards of the sea.
+          </p>
+          <a href="team.html" class="button">Meet the Team</a>
+        </div>
+        <div class="mission-image">
+          <img
+            src="Images/Student-02/Mission-section.jpg"
+            alt="Ocean conservation mission"
+            title="A diver planting coral to restore the reef and protect marine life"
+          />
+        </div>
+      </section>
+
+      <!-- do your code here  -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-col footer-logo-col">
+          <img
+            src="Images/Student-02/logo.png"
+            alt="Life Below Water Logo"
+            class="footer-logo"
+          />
+          <span class="footer-site-name">Life Below Water</span>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="profile.html">Profile</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="ocean_conservation.html">Ocean Cleanup</a></li>
+            <li><a href="marine_biodiversity.html">Marine Life</a></li>
+            <li><a href="content_ST4.html">Conservation</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-credit">
+        Created by Student_02 |
+        <a href="Page_Editors/Student-02/pageEditor_ST2.html" target="_blank"
+          >Page Editor</a
+        >
+      </p>
+    </footer>
+    <a href="#" class="go-top" aria-label="Go to top">⬆️</a>
+
+    <script>
+      const goTopButton = document.querySelector(".go-top");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+          goTopButton.style.display = "block";
+        } else {
+          goTopButton.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

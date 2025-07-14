@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life Below Water</title>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="Styles/Student-03/feedstyle.css" />
+
+  </head>
+  <body>
+   <!-- Header with Navbar -->
+
+    <div class="loader-overlay" id="loader">
+      <div class="spinner"></div>
+    </div>
+
+    <header>
+      <div class="logo">
+        <img src="Images/Student-02/logo.png" alt="Life Below Water Logo" />
+
+        Life Below Water
+      </div>
+      <nav>
+        <a href="home.html">Home</a>
+
+        <a href="table.html">Table</a>
+        <a href="team.html">Team</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="sitemap.html">Sitemap</a>
+        <a href="profile.html" class="profile-link" title="user Profile"></a>
+          
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <form action="/submit-feedback" method="post">
+          <h2 class="feedback-topic">Feedback form</h2>
+          <h5 class="feedback-subtopic">
+            <b>Share your thoughts with us! </b>Your feedback helps us protect
+            marine life and enhanced our Life Below Water website.
+          </h5>
+          <div class="form-container">
+            <fieldset>
+              <legend>Personal details</legend>
+              <p class="required-topic"><b>Required fields *</b></p>
+              <div class="form-group1">
+                <label for="full-name"><span class="required-topic"><strong>*</strong></span><b>Full Name: </b></label>
+                <input
+                  type="text"
+                  name="full-name"
+                  id="full-name"
+                  placeholder="Enter name here"
+                  required/>
+              </div>
+              <div class="form-group1">
+                <label for="email"><span class="required-topic"><strong>*</strong></span><b>Email Address: </b></label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter email here"
+                  required
+                />
+              </div>
+              <div class="form-group1">
+                <label for="tel"><span class="required-topic"><strong>*</strong></span><b>Telephone Number: </b></label>
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  placeholder="Enter telephone number here"
+                  required
+                />
+              </div>
+            </fieldset>
+          </div>
+          <div class="form-container">
+            <fieldset>
+              <legend>Feedback details</legend>
+              <div class="form-group2">
+                <label>Was this your first time visiting?</label>
+                <div class="radio-group">
+                  <input type="radio" name="first-visit" value="yes" checked /> Yes
+                  <input type="radio" name="first-visit" value="no" /> No
+                </div>
+              </div>
+              <div class="form-group2">
+                <label>Was this website informative and easy to navigate through?</label>
+                <div class="radio-group">
+                  <input type="radio" name="informative" value="yes" /> Yes
+                  <input type="radio" name="informative" value="no" /> No
+                </div>
+              </div>
+              <div class="form-group2">
+                <label for="improvements">If "No", suggest any improvements for the future:</label>
+                <textarea id="improvements" name="improvements" placeholder="Add your message here..."></textarea>
+              </div>
+              <div class="form-group2">
+                <label>How satisfied are you with Our services? Choose from 0 to 10, with 1 being "Not satisfied at all" and 10 being "Extremely satisfied"</label>
+                <div class="rating">
+                  <input type="radio" name="satisfaction" value="1" /> 1
+                  <input type="radio" name="satisfaction" value="2" /> 2
+                  <input type="radio" name="satisfaction" value="3" /> 3
+                  <input type="radio" name="satisfaction" value="4" /> 4
+                  <input type="radio" name="satisfaction" value="5" /> 5
+                  <input type="radio" name="satisfaction" value="6" /> 6
+                  <input type="radio" name="satisfaction" value="7" /> 7
+                  <input type="radio" name="satisfaction" value="8" /> 8
+                  <input type="radio" name="satisfaction" value="9" /> 9
+                  <input type="radio" name="satisfaction" value="10" /> 10
+                </div>
+              </div>
+              <div class="form-group2">
+                <label>Would you recommend our services?</label>
+                <div class="radio-group">
+                  <input type="radio" name="recommend" value="yes" /> Yes
+                  <input type="radio" name="recommend" value="no" /> No
+                </div>
+              </div>
+              <div class="form-group2">
+                <label>Would you like to receive updates about the website and any offers?</label>
+                <br/>
+                <select name="receive-updates">
+                  <option value="yes-email">Yes - via Email</option>
+                  <option value="no">No</option>
+                </select>
+              </div>
+              <div class="form-group2">
+                <label for="additional">Do you have any additional questions or requests?</label>
+                <textarea id="additional" name="additional" placeholder="Add your message here..."></textarea>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="button-s">
+            <input
+              type="submit"
+              name="button"
+              value="Submit"
+              class="submit-button"
+            />
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-col footer-logo-col">
+          <img
+            src="Images/Student-02/logo.png"
+            alt="Life Below Water Logo"
+            class="footer-logo"
+          />
+          <span class="footer-site-name">Life Below Water</span>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="profile.html">Profile</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="ocean_conservation.html">Ocean Cleanup</a></li>
+            <li><a href="marine_biodiversity.html">Marine Life</a></li>
+            <li><a href="content_ST4.html">Conservation</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-credit">
+        Created by Student_03 |
+        <a href="Page_Editors/Student-03/pageEditor_ST3.html" target="_blank">Page Editor</a>
+      </p>
+    </footer>
+    <a href="#" class="go-top" aria-label="Go to top">⬆️</a>
+
+    <script>
+      const goTopButton = document.querySelector(".go-top");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+          goTopButton.style.display = "block";
+        } else {
+          goTopButton.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
+

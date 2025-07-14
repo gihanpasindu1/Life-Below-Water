@@ -1,0 +1,81 @@
+.bg{
+    margin-top: 50px;
+}
+.ttl{
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+.topic {
+    background: url(/Images/Student-03/mb.jpg);
+    background-size: cover;
+    background-color: rgb(71, 71, 176);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+    margin-top: 3px;
+    text-align: center;
+    padding: 5%;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+section{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);   
+}
+
+.introduction {
+    text-align: left;
+    padding: 3%;
+    
+}
+.intro-image {
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+.importance {
+    text-align: left;
+    padding: 3%;
+}
+.risk {
+    text-align: left;
+    padding: 3%;
+    
+
+}
+.risk-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    height:200px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+
+    
+}
+.risk-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 0;
+}
+.solution {
+    text-align: left;
+    padding: 3%;
+}
+.solution-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 0;
+}

@@ -1,0 +1,29 @@
+body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4fcff;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      color: #00796b;
+    }
+
+    .validation-img {
+      max-width: 100%;
+      border: 3px solid #4caf50;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .page-block {
+      margin-bottom: 40px;
+    }
+
+    footer {
+      background-color: #004d40;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }

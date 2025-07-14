@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Profile - Life Below Water</title>
+  <link rel="stylesheet" href="global.css" />
+  <style>
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      background: #f0faff;
+    }
+    .progress-bar {
+      background: #ccc;
+      border-radius: 10px;
+      height: 20px;
+      margin: 10px 0;
+    }
+    .progress-bar div {
+      background: #0077cc;
+      height: 100%;
+      border-radius: 10px;
+      width: 80%;
+    }
+    .hover-card:hover {
+      background-color: #e0f7ff;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    td, th {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+    .interests-icons img {
+      margin: 8px;
+      width: 60px;
+      height: 60px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with Navbar -->
+  <header>
+    <div class="logo">
+      <img src="Images/Student-02/logo.png" alt="Life Below Water Logo" />
+      Life Below Water
+    </div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="content_ST1.html">Content 1</a>
+      <a href="content_ST2.html">Content 2</a>
+      <a href="content_ST3.html">Content 3</a>
+      <a href="content_ST4.html">Content 4</a>
+      <a href="table.html">Table</a>
+      <a href="team.html">Team</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="sitemap.html">Sitemap</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="card hover-card">
+      <img src="Images/Student-04/avatar.jpg" alt="Yash Fernando" width="150" style="border-radius: 50%;" />
+      <h2>Yash Fernando</h2>
+      <h4>Student 4 - Web Designer</h4>
+
+      <section>
+        <h3>About Me</h3>
+        <p>I'm passionate about Life Below Water and reducing ocean pollution.</p>
+      </section>
+
+      <section>
+        <h3>Skills</h3>
+        <p>HTML, CSS, Teamwork</p>
+        <div class="progress-bar"><div></div></div>
+      </section>
+
+      <section>
+        <h3>Volunteer Interests</h3>
+        <ul>
+          <li>Beach Clean-ups 🧹</li>
+          <li>Coral Reef Protection 🪸</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>UN Goals I Support</h3>
+        <div class="interests-icons">
+          <img src="Images/icons/turtle.png" alt="Sea turtle protection icon">
+          <img src="Images/icons/no-plastic.png" alt="Ban plastic waste icon">
+          <img src="Images/icons/reef.png" alt="Coral reef conservation symbol">
+          <img src="Images/icons/cleanup.png" alt="Beach cleaning volunteer icon">
+        </div>
+      </section>
+
+      <section>
+        <h3>Availability</h3>
+        <table>
+          <tr><th>Day</th><th>Time</th></tr>
+          <tr><td>Monday</td><td>10:00 - 13:00</td></tr>
+          <tr><td>Wednesday</td><td>14:00 - 17:00</td></tr>
+        </table>
+      </section>
+
+      <section>
+        <h3>Contact Me</h3>
+        <form>
+          <label>Name: <input type="text" name="name" required></label><br><br>
+          <label>Email: <input type="email" name="email" required></label><br><br>
+          <label>Message:<br><textarea name="message" rows="4" cols="50" required></textarea></label><br><br>
+          <button type="submit">Send</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      Created by Team BlueFin 🐟 |
+      <a href="pageEditor_ST4.html" target="_blank">Page Editor</a>
+    </p>
+  </footer>
+</body>
+</html>

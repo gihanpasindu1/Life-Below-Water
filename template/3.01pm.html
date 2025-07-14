@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Website Structure Map</title>
+  <meta name="viewport" content="width=1200">
+  <style>
+    body {
+      background: #f6f8fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .sitemap-title {
+      text-align: center;
+      font-size: 2.3rem;
+      font-weight: 700;
+      margin: 40px 0 10px 0;
+      letter-spacing: 1px;
+      color: #263238;
+      text-shadow: 0 2px 8px #e3e6e8;
+    }
+    .sitemap-container {
+      position: relative;
+      width: 1200px;
+      max-width: 98vw;
+      margin: 0 auto 40px auto;
+      padding-top: 60px;
+      min-height: 900px;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 6px 32px rgba(60,60,60,0.08);
+      overflow: visible;
+    }
+    .sitemap-row {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 32px;
+      position: relative;
+      z-index: 2;
+      margin-bottom: 55px;
+    }
+    .sitemap-node {
+      min-width: 140px;
+      padding: 16px 22px;
+      border-radius: 14px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.07rem;
+      text-align: center;
+      box-shadow: 0 3px 18px rgba(60,60,60,0.10);
+      cursor: pointer;
+      border: 2.5px solid transparent;
+      user-select: none;
+      outline: none;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+      position: relative;
+      z-index: 2;
+      background-clip: padding-box;
+    }
+    .sitemap-node:focus, .sitemap-node:hover {
+      transform: scale(1.07);
+      box-shadow: 0 6px 28px rgba(60,60,60,0.17);
+      border-color: #263238;
+    }
+    /* Color coding */
+    .home { background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%); color: #263238;}
+    .main { background: linear-gradient(90deg, #1976d2 0%, #00c6fb 100%);}
+    .content { background: linear-gradient(90deg, #26c6da 0%, #00acc1 100%);}
+    .editor { background: linear-gradient(90deg, #b06ab3 0%, #f857a6 100%);}
+    .sitemap-current {
+      background: linear-gradient(90deg, #ffb347 0%, #ffcc33 100%);
+      color: #222;
+      box-shadow: 0 0 0 4px #fff3cd, 0 6px 28px rgba(255,193,7,0.25);
+      border: 3px solid #ff9800;
+      position: relative;
+      margin-top: 10px;
+    }
+    /* YOU ARE HERE badge */
+    .badge {
+      position: absolute;
+      left: 50%;
+      bottom: -38px;
+      transform: translateX(-50%);
+      background: #222;
+      color: #ffe082;
+      font-size: 1.05rem;
+      border-radius: 16px;
+      padding: 6px 22px 5px 22px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+      z-index: 3;
+      border: 2px solid #ffb300;
+      text-shadow: 0 2px 8px #fff2;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .badge:before {
+      content: "⭐";
+      font-size: 1.2rem;
+      margin-right: 6px;
+    }
+    /* Responsive */
+    @media (max-width: 1200px) {
+      .sitemap-container { width: 98vw; min-width: 0; }
+    }
+    @media (max-width: 900px) {
+      .sitemap-row { flex-wrap: wrap; gap: 12px; }
+      .sitemap-node { min-width: 90px; font-size: 1rem; padding: 10px 8px;}
+    }
+    @media (max-width: 600px) {
+      .sitemap-title { font-size: 1.2rem;}
+      .sitemap-row { gap: 4px; margin-bottom: 18px;}
+      .sitemap-node { min-width: 70px; font-size: 0.93rem; padding: 7px 4px;}
+    }
+  </style>
+</head>
+<body>
+  <h2 class="sitemap-title">Website Structure Map</h2>
+  <div class="sitemap-container">
+    <!-- SVG lines -->
+    <svg width="1200" height="900" style="position:absolute; left:0; top:0; pointer-events:none; z-index:1;">
+      <!-- Home to Main -->
+      <line x1="600" y1="90" x2="200" y2="180" stroke="#bbb" stroke-width="2"/>
+      <line x1="600" y1="90" x2="320" y2="180" stroke="#bbb" stroke-width="2"/>
+      <line x1="600" y1="90" x2="440" y2="180" stroke="#bbb" stroke-width="2"/>
+      <line x1="600" y1="90" x2="600" y2="180" stroke="#bbb" stroke-width="2"/>
+      <line x1="600" y1="90" x2="760" y2="180" stroke="#bbb" stroke-width="2"/>
+      <line x1="600" y1="90" x2="880" y2="180" stroke="#bbb" stroke-width="2"/>
+      <line x1="600" y1="90" x2="1040" y2="180" stroke="#bbb" stroke-width="2"/>
+      <!-- Main to Content -->
+      <line x1="200" y1="220" x2="320" y2="310" stroke="#bbb" stroke-width="2"/>
+      <line x1="320" y1="220" x2="320" y2="310" stroke="#bbb" stroke-width="2"/>
+      <line x1="440" y1="220" x2="320" y2="310" stroke="#bbb" stroke-width="2"/>
+      <line x1="440" y1="220" x2="600" y2="310" stroke="#bbb" stroke-width="2"/>
+      <line x1="600" y1="220" x2="600" y2="310" stroke="#bbb" stroke-width="2"/>
+      <line x1="760" y1="220" x2="600" y2="310" stroke="#bbb" stroke-width="2"/>
+      <line x1="760" y1="220" x2="880" y2="310" stroke="#bbb" stroke-width="2"/>
+      <line x1="880" y1="220" x2="880" y2="310" stroke="#bbb" stroke-width="2"/>
+      <line x1="1040" y1="220" x2="880" y2="310" stroke="#bbb" stroke-width="2"/>
+      <!-- Profile to Student 4 Content (CORRECTED) -->
+      <line x1="880" y1="220" x2="1040" y2="310" stroke="#bbb" stroke-width="2"/>
+      <!-- Content to Editors/Validation -->
+      <line x1="320" y1="350" x2="200" y2="440" stroke="#bbb" stroke-width="2"/>
+      <line x1="320" y1="350" x2="320" y2="440" stroke="#bbb" stroke-width="2"/>
+      <line x1="320" y1="350" x2="440" y2="440" stroke="#bbb" stroke-width="2"/>
+      <line x1="600" y1="350" x2="440" y2="440" stroke="#bbb" stroke-width="2"/>
+      <line x1="600" y1="350" x2="600" y2="440" stroke="#bbb" stroke-width="2"/>
+      <line x1="600" y1="350" x2="760" y2="440" stroke="#bbb" stroke-width="2"/>
+      <line x1="880" y1="350" x2="760" y2="440" stroke="#bbb" stroke-width="2"/>
+      <line x1="880" y1="350" x2="880" y2="440" stroke="#bbb" stroke-width="2"/>
+      <line x1="1040" y1="350" x2="1040" y2="440" stroke="#bbb" stroke-width="2"/>
+      <!-- Editors/Validation to Sitemap -->
+      <line x1="320" y1="480" x2="600" y2="670" stroke="#bbb" stroke-width="2"/>
+      <line x1="440" y1="480" x2="600" y2="670" stroke="#bbb" stroke-width="2"/>
+      <line x1="600" y1="480" x2="600" y2="670" stroke="#bbb" stroke-width="2"/>
+      <line x1="760" y1="480" x2="600" y2="670" stroke="#bbb" stroke-width="2"/>
+      <line x1="880" y1="480" x2="600" y2="670" stroke="#bbb" stroke-width="2"/>
+      <line x1="1040" y1="480" x2="600" y2="670" stroke="#bbb" stroke-width="2"/>
+      <line x1="200" y1="480" x2="600" y2="670" stroke="#bbb" stroke-width="2"/>
+    </svg>
+    <!-- Home -->
+    <div class="sitemap-row" style="margin-bottom: 45px;">
+      <div class="sitemap-node home" style="margin-left: 460px;">Home</div>
+    </div>
+    <!-- Main Navigation -->
+    <div class="sitemap-row" style="margin-bottom: 45px;">
+      <div class="sitemap-node main" style="margin-left: 0px;">splash Screen</div>
+      <div class="sitemap-node main">Volunteer</div>
+      <div class="sitemap-node main">Data Table</div>
+      <div class="sitemap-node main">Team</div>
+      <div class="sitemap-node main">Feedback</div>
+      <div class="sitemap-node main">Profile</div>
+      <div class="sitemap-node main">SiteMap</div>
+    </div>
+    <!-- Content -->
+    <div class="sitemap-row" style="margin-bottom: 45px;">
+      <div class="sitemap-node content" style="margin-left: 120px;">Student 1 Content</div>
+      <div class="sitemap-node content">Student 2 Content</div>
+      <div class="sitemap-node content" style="margin-left: 120px;">Student 3 Content</div>
+      <div class="sitemap-node content">Student 4 Content</div>
+    </div>
+    <!-- Editors/Validation -->
+    <div class="sitemap-row" style="margin-bottom: 75px;">
+      <div class="sitemap-node editor" style="margin-left: 0px;">Editor 1</div>
+      <div class="sitemap-node editor">Validation 1</div>
+      <div class="sitemap-node editor">Editor 2</div>
+      <div class="sitemap-node editor">Validation 2</div>
+      <div class="sitemap-node editor">Editor 3</div>
+      <div class="sitemap-node editor">Validation 3</div>
+      <div class="sitemap-node editor">Editor 4</div>
+      <div class="sitemap-node editor">Validation 4</div>
+    </div>
+    <!-- Sitemap Current -->
+    <div class="sitemap-row" style="margin-top: 38px;">
+      <div class="sitemap-node sitemap-current" style="margin-left: 460px;">
+        Sitemap (Current)
+        <div class="badge">YOU ARE HERE</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

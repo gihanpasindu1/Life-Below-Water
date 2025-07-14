@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 3</title>
+    <style>
+        body {
+            background-color: Gainsboro;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #f8f8f8;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+        }
+
+        .navbar li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .main-content {
+            margin-top: 50px;
+        }
+
+        h2 {
+            padding: 3px;
+            background-color: LightSkyBlue;
+        }
+
+        img {
+            width: 25px;
+            padding-right: 5px;
+            float: left;
+        }
+
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+        a:visited {
+            color: purple;
+        }
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+        a:active {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#tutorials">Tutorials</a></li>
+                <li><a href="#university-work">University Work</a></li>
+                <li><a href="#web-stuff">Web Stuff</a></li>
+                <li><a href="#social-media">Social Media</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <header>
+            <h1 id="top">My Useful Links</h1>
+        </header>
+        <main>
+            <section id="tutorials">
+                <img src="icon-tutorials.png" alt="ginger cat" width="25">
+                <h2>Tutorials</h2>
+                <dl>
+                    <dt><a href="tutorial1.html" target="_blank">Tutorial 1</a></dt>
+                    <dd>This is a link to my first tutorial, where I practiced basic html & CSS.</dd>
+                    <dt><a href="tutorial2.html" target="_blank">Tutorial 2</a></dt>
+                    <dd>This is a link to my second tutorial, where I practiced with Lists and Tables.</dd>
+                </dl>
+            </section>
+            <section id="university-work">
+                <img src="icon-university.png" alt="ginger cat" width="25">
+                <h2>University Work</h2>
+                <dl>
+                    <dt><a href="https://blackboard.westminster.ac.uk" target="_blank">Blackboard</a></dt>
+                    <dd>The VLE we use at University.</dd>
+                    <dt><a href="https://timetabling.westminster.ac.uk" target="_blank">Timetabling</a></dt>
+                    <dd>This is a link to my University Timetable, with all my lectures and tutorials.</dd>
+                    <dt><a href="https://webdevschedule.westminster.ac.uk" target="_blank">Web Dev Schedule</a></dt>
+                    <dd>A link to my Web Design and Development module schedule, from which I can access all my lectures and tutorials, and check deadline dates.</dd>
+                    <dt><a href="https://studenthub.westminster.ac.uk" target="_blank">Student Hub</a></dt>
+                    <dd>The Student Hub is the University Web site for current students which provides information such as news and events, and links to all the University Web systems and services.</dd>
+                </dl>
+            </section>
+            <section id="web-stuff">
+                <img src="icon-webstuff.png" alt="ginger cat" width="25">
+                <h2>Web Stuff</h2>
+                <dl>
+                    <dt><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></dt>
+                    <dd>Online resources for Web Development developed by

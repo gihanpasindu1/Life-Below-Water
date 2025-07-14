@@ -1,0 +1,55 @@
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-image: url(/Images/Student-01/splash.bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+
+}
+.logo{
+  height: 150px;
+  width: 150px;
+}
+h1,h2{
+  color: #061682;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 100%; 
+  height: 100%; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+p{
+  color: #f0f9ff;
+}
+  
+.loader {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.mission {
+  background-color: rgba(28, 48, 36, 0.603); 
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table, td {
+  border: 2.5px solid white;
+  border-collapse: collapse;
+  align-content: left;
+  padding-right: 100px;
+  color: #ffffff;
+}
+
+th{
+  border: 2.5px solid white;
+  border-collapse: collapse;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: #ffffff;
+  font-weight: bolder;
+}

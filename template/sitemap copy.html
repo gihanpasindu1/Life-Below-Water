@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Website Structure Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #fafbfc;
+      color: #222;
+    }
+    .sitemap-title {
+      text-align: center;
+      font-size: 2.3rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      margin-top: 30px;
+      letter-spacing: 1px;
+      color: #263238;
+    }
+    .sitemap-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      min-height: 700px;
+      margin-bottom: 40px;
+    }
+    .nodes-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 44px;
+      position: relative;
+      z-index: 2;
+    }
+    .sitemap-link {
+      text-decoration: none;
+      display: inline-block;
+    }
+    .sitemap-node {
+      min-width: 120px;
+      padding: 13px 18px;
+      border-radius: 16px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.13rem;
+      text-align: center;
+      box-shadow: 0 2px 12px rgba(60,60,60,0.07);
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: transform 0.2s, box-shadow 0.2s;
+      position: relative;
+      user-select: none;
+      outline: none;
+      z-index: 2;
+      background-clip: padding-box;
+    }
+    .sitemap-node:focus, .sitemap-node:hover {
+      transform: scale(1.06);
+      box-shadow: 0 4px 18px rgba(60,60,60,0.13);
+      border-color: #263238;
+    }
+    /* Color coding */
+    .home { background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%); color: #263238;}
+    .main { background: linear-gradient(90deg, #1976d2 0%, #00c6fb 100%);}
+    .content { background: linear-gradient(90deg, #26c6da 0%, #00acc1 100%);}
+    .student { background: linear-gradient(90deg, #f857a6 0%, #ff5858 100%);}
+    .sitemap { background: linear-gradient(90deg, #ff9800 0%, #ffb300 100%); color: #222;}
+    .current { border: 3px solid #ff1744; position: relative;}
+    .current::after {
+      content: "YOU ARE HERE";
+      position: absolute;
+      left: 50%; bottom: -28px;
+      transform: translateX(-50%);
+      background: #ff1744;
+      color: #fff;
+      font-size: 0.85rem;
+      border-radius: 12px;
+      padding: 2px 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      z-index: 3;
+    }
+    .badge-check {
+      position: absolute;
+      top: -12px;
+      right: -12px;
+      width: 24px;
+      height: 24px;
+      background: #ff1744;
+      color: #fff;
+      border-radius: 50%;
+      font-size: 1.1rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      z-index: 4;
+    }
+    /* Responsive */
+    @media (max-width: 1000px) {
+      .nodes-row { gap: 12px; }
+      .sitemap-node { min-width: 110px; font-size: 1rem; padding: 10px 8px;}
+    }
+    @media (max-width: 700px) {
+      .sitemap-title { font-size: 1.3rem;}
+      .nodes-row { flex-wrap: wrap; gap: 6px; margin-bottom: 25px;}
+      .sitemap-node { min-width: 80px; font-size: 0.93rem; padding: 8px 4px;}
+    }
+  </style>
+</head>
+<body>
+  <h2 class="sitemap-title">Website Structure Map</h2>
+  <div class="sitemap-container" id="sitemap-container">
+    <!-- SVG lines go here -->
+    <svg id="sitemap-lines" width="100%" height="700" style="position:absolute;top:0;left:0;z-index:1;pointer-events:none;"></svg>
+    <!-- Row 1: Home -->
+    <div class="nodes-row" id="row-home">
+      <a href="home.html" class="sitemap-link"><div class="sitemap-node home" tabindex="0">Home</div></a>
+    </div>
+    <!-- Row 2: Main Navigation -->
+    <div class="nodes-row" id="row-main">
+      <a href="splash.html" class="sitemap-link"><div class="sitemap-node main" tabindex="0">splash Screen</div></a>
+      <a href="volunteer.html" class="sitemap-link"><div class="sitemap-node main" tabindex="0">Volunteer</div></a>
+      <a href="table.html" class="sitemap-link"><div class="sitemap-node main" tabindex="0">Data Table</div></a>
+      <a href="team.html" class="sitemap-link"><div class="sitemap-node main" tabindex="0">Team</div></a>
+      <a href="feedback.html" class="sitemap-link"><div class="sitemap-node main" tabindex="0">Feedback</div></a>
+      <a href="profile.html" class="sitemap-link"><div class="sitemap-node main" tabindex="0">User Profile</div></a>
+      <a href="sitemap.html" class="sitemap-link"><div class="sitemap-node main" tabindex="0">SiteMap</div></a>
+    </div>
+    <!-- Row 3: Student Content -->
+    <div class="nodes-row" id="row-content">
+      <a href="content_ST1.html" class="sitemap-link"><div class="sitemap-node content" tabindex="0">Student 1 Content</div></a>
+      <a href="content_ST2.html" class="sitemap-link"><div class="sitemap-node content" tabindex="0">Student 2 Content</div></a>
+      <a href="content_ST3.html" class="sitemap-link"><div class="sitemap-node content" tabindex="0">Student 3 Content</div></a>
+      <a href="content_ST4.html" class="sitemap-link"><div class="sitemap-node content" tabindex="0">Student 4 Content</div></a>
+    </div>
+    <!-- Row 4: Editors/Validation -->
+    <div class="nodes-row" id="row-student">
+      <a href="pageEditor_ST1.html" class="sitemap-link"><div class="sitemap-node student" tabindex="0">Editor 1</div></a>
+      <a href="validation_ST1.html" class="sitemap-link"><div class="sitemap-node student" tabindex="0">Validation 1</div></a>
+      <a href="pageEditor_ST2.html" class="sitemap-link"><div class="sitemap-node student" tabindex="0">Editor 2</div></a>
+      <a href="validation_ST2.html" class="sitemap-link"><div class="sitemap-node student" tabindex="0">Validation 2</div></a>
+      <a href="pageEditor_ST3.html" class="sitemap-link"><div class="sitemap-node student" tabindex="0">Editor 3</div></a>
+      <a href="validation_ST3.html" class="sitemap-link"><div class="sitemap-node student" tabindex="0">Validation 3</div></a>
+      <a href="pageEditor_ST4.html" class="sitemap-link"><div class="sitemap-node student" tabindex="0">Editor 4</div></a>
+      <a href="validation_ST4.html" class="sitemap-link"><div class="sitemap-node student" tabindex="0">Validation 4</div></a>
+    </div>
+    <!-- Row 5: Sitemap Current -->
+    <div class="nodes-row" id="row-sitemap">
+      <div class="sitemap-node sitemap current" tabindex="0" style="position:relative;">
+        Sitemap (Current)
+        <span class="badge-check" aria-label="Current page">&#10004;</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Draw lines between nodes using their positions
+    function drawSitemapLines() {
+      const svg = document.getElementById('sitemap-lines');
+      svg.innerHTML = '';
+      const rows = [
+        [...document.querySelectorAll('#row-home .sitemap-node')],
+        [...document.querySelectorAll('#row-main .sitemap-node')],
+        [...document.querySelectorAll('#row-content .sitemap-node')],
+        [...document.querySelectorAll('#row-student .sitemap-node')],
+        [...document.querySelectorAll('#row-sitemap .sitemap-node')]
+      ];
+      // Helper: get center of a node
+      function getCenter(node) {
+        const rect = node.getBoundingClientRect();
+        const parentRect = svg.getBoundingClientRect();
+        return {
+          x: rect.left + rect.width / 2 - parentRect.left,
+          y: rect.top + rect.height / 2 - parentRect.top
+        };
+      }
+      // Connect Home to all main nodes
+      rows[0].forEach(home => {
+        rows[1].forEach(main => {
+          const a = getCenter(home), b = getCenter(main);
+          svg.innerHTML += `<line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" stroke="#bbb" stroke-width="2"/>`;
+        });
+      });
+      // Connect Main nodes to Content nodes (map: 0,1->0; 2,3->1; 4,5->2; 6->3)
+      [[0,1],[2],[3,4],[5,6]].forEach((inds, i) => {
+        inds.forEach(idx => {
+          if (rows[1][idx] && rows[2][i]) {
+            const a = getCenter(rows[1][idx]), b = getCenter(rows[2][i]);
+            svg.innerHTML += `<line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" stroke="#bbb" stroke-width="2"/>`;
+          }
+        });
+      });
+      // Connect Content nodes to Editor/Validation nodes (each to 2)
+      for(let i=0; i<4; ++i) {
+        let a = getCenter(rows[2][i]);
+        let b1 = getCenter(rows[3][i*2]), b2 = getCenter(rows[3][i*2+1]);
+        svg.innerHTML += `<line x1="${a.x}" y1="${a.y}" x2="${b1.x}" y2="${b1.y}" stroke="#bbb" stroke-width="2"/>`;
+        svg.innerHTML += `<line x1="${a.x}" y1="${a.y}" x2="${b2.x}" y2="${b2.y}" stroke="#bbb" stroke-width="2"/>`;
+      }
+      // Connect Home to Sitemap (Current)
+      const a = getCenter(rows[0][0]), b = getCenter(rows[4][0]);
+      svg.innerHTML += `<line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" stroke="#bbb" stroke-width="2"/>`;
+    }
+    window.addEventListener('DOMContentLoaded', drawSitemapLines);
+    window.addEventListener('resize', () => setTimeout(drawSitemapLines, 100));
+  </script>
+</body>
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life Below Water</title>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="Styles/Student-02/ContentST2.css" />
+    <style>
+      /* Basic styling to make the page functional */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+      }
+      
+      header {
+        background: linear-gradient(135deg, #006994, #0099cc);
+        color: white;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .logo {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      
+      .logo img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+      }
+      
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: background 0.3s;
+      }
+      
+      nav a:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+      
+      .topic {
+        background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+        color: white;
+        text-align: center;
+        padding: 2rem;
+      }
+      
+      .topic h1 {
+        font-size: 2.5rem;
+        margin: 0;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      }
+      
+      .content-nav {
+        background: #f8f9fa;
+        padding: 1rem;
+        text-align: center;
+        border-bottom: 3px solid #ff6b6b;
+      }
+      
+      .content-nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .content-nav a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 25px;
+        transition: all 0.3s;
+      }
+      
+      .content-nav a:hover {
+        background: #ff6b6b;
+        color: white;
+      }
+      
+      main {
+        background: white;
+      }
+      
+      .side-by-side {
+        display: flex;
+        align-items: center;
+        padding: 3rem;
+        gap: 3rem;
+      }
+      
+      .side-by-side.reverse {
+        flex-direction: row-reverse;
+      }
+      
+      .side-by-side img {
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      }
+      
+      .description {
+        flex: 1;
+      }
+      
+      .description h2 {
+        color: #333;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        border-bottom: 3px solid #ff6b6b;
+        padding-bottom: 0.5rem;
+      }
+      
+      .description p {
+        font-size: 1.1rem;
+        color: #555;
+        text-align: justify;
+      }
+      
+      .info-highlight {
+        background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+        color: white;
+        padding: 3rem;
+        text-align: center;
+      }
+      
+      .info-highlight h2 {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+        color: white;
+      }
+      
+      .info-highlight p {
+        font-size: 1.2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: justify;
+      }
+      
+      footer {
+        background: #333;
+        color: white;
+        padding: 2rem;
+      }
+      
+      .footer-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 2rem;
+      }
+      
+      .footer-col {
+        flex: 1;
+      }
+      
+      .footer-logo-col {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      
+      .footer-logo {
+        width: 40px;
+        height: 40px;
+      }
+      
+      .footer-site-name {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      
+      .footer-col h4 {
+        margin-bottom: 1rem;
+        color: #ff6b6b;
+      }
+      
+      .footer-col ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .footer-col ul li {
+        margin-bottom: 0.5rem;
+      }
+      
+      .footer-col ul li a {
+        color: #ccc;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      
+      .footer-col ul li a:hover {
+        color: #ff6b6b;
+      }
+      
+      .footer-credit {
+        text-align: center;
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 1px solid #555;
+        color: #ccc;
+      }
+      
+      .footer-credit a {
+        color: #ff6b6b;
+        text-decoration: none;
+      }
+      
+      .go-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #ff6b6b;
+        color: white;
+        padding: 15px;
+        border-radius: 50%;
+        text-decoration: none;
+        font-size: 20px;
+        display: none;
+        transition: background 0.3s;
+      }
+      
+      .go-top:hover {
+        background: #ff5252;
+      }
+      
+      @media (max-width: 768px) {
+        .side-by-side {
+          flex-direction: column;
+          text-align: center;
+          padding: 2rem;
+        }
+        
+        .side-by-side.reverse {
+          flex-direction: column;
+        }
+        
+        .side-by-side img {
+          width: 100%;
+          max-width: 400px;
+        }
+        
+        .content-nav ul {
+          flex-direction: column;
+          gap: 1rem;
+        }
+        
+        .footer-container {
+          flex-direction: column;
+        }
+        
+        header {
+          flex-direction: column;
+          gap: 1rem;
+        }
+        
+        nav {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header with Navbar -->
+    <header>
+      <div class="logo">
+        <img src="Images/Student-02/logo.png" alt="Life Below Water Logo" />
+        Life Below Water
+      </div>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="table.html">Table</a>
+        <a href="team.html">Team</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="sitemap.html">Sitemap</a>
+        <a href="profile.html" class="profile-link" title="user Profile"></a>
+      </nav>
+    </header>
+
+    <div class="topic">
+      <h1>Coral Reef Conservation</h1>
+    </div>
+
+    <nav class="content-nav">
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#threats">Threats to Coral Reefs</a></li>
+        <li><a href="#importance">Ecological Importance</a></li>
+        <li><a href="#conservation">Conservation Efforts</a></li>
+      </ul>
+    </nav>
+
+    <main style="background-color: white">
+      <section
+        class="side-by-side"
+        style="background-color: rgb(239, 236, 236)"
+      >
+        <img
+          src="Images/Student-02/coral_reef_01.jpg"
+          alt="vibrant coral reef"
+          title="Healthy coral reef ecosystem with diverse marine life"
+        />
+        <div class="description">
+          <h2 id="introduction">Introduction</h2>
+
+          <p>
+            Coral reefs are among the most biodiverse and productive ecosystems on Earth, often called the "rainforests of the sea." These underwater cities support approximately 25% of all marine species despite covering less than 1% of the ocean floor. Built by tiny coral polyps over thousands of years, coral reefs provide essential services including coastal protection, fisheries support, and tourism revenue for millions of people worldwide. However, these magnificent ecosystems face unprecedented threats from climate change, pollution, and human activities. With over 50% of the world's coral reefs already degraded or destroyed, urgent conservation action is needed to protect these irreplaceable marine treasures for future generations.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="side-by-side reverse"
+        style="background-color: rgb(225, 244, 244)"
+      >
+        <div class="description">
+          <h2 id="threats">Threats to Coral Reefs</h2>
+          <p>
+            Coral reefs face multiple interconnected threats that have accelerated their decline in recent decades. Climate change is the most significant threat, causing ocean acidification and rising sea temperatures that lead to coral bleaching events. When water temperatures rise by just 1-2°C above normal, corals expel their colorful symbiotic algae and turn white, often leading to death if conditions persist. Pollution from agricultural runoff, sewage, and plastic waste introduces harmful chemicals and nutrients that promote algae growth, smothering corals. Overfishing disrupts the delicate balance of reef ecosystems, while destructive fishing practices using dynamite or cyanide directly damage coral structures. Coastal development, tourism pressure, and physical damage from boats and anchors further compound these threats.
+          </p>
+        </div>
+        <img
+          src="Images/Student-02/coral_bleaching.jpg"
+          alt="bleached coral reef"
+          title="Coral bleaching caused by rising ocean temperatures"
+        />
+      </section>
+
+      <section
+        class="side-by-side"
+        style="background-color: rgb(239, 236, 236)"
+      >
+        <img
+          src="Images/Student-02/reef_ecosystem.jpg"
+          alt="diverse marine life in coral reef"
+          title="Rich biodiversity supported by healthy coral reef ecosystems"
+        />
+        <div class="description">
+          <h2 id="importance">Ecological Importance</h2>
+
+          <p>
+            Coral reefs serve as critical nurseries and feeding grounds for countless marine species, from tiny fish to large predators like sharks and rays. These complex three-dimensional structures provide shelter, breeding sites, and food sources that support intricate food webs. Many commercially important fish species depend on coral reefs during their juvenile stages, making reef health essential for global fisheries. Beyond marine life, coral reefs act as natural barriers that protect coastlines from storms, waves, and erosion, safeguarding coastal communities and infrastructure. The calcium carbonate skeletons of corals also play a crucial role in the global carbon cycle, helping to regulate ocean chemistry and climate patterns that affect the entire planet.
+          </p>
+        </div>
+      </section>
+      
+      <section class="info-highlight">
+        <h2 id="conservation">Conservation Efforts</h2>
+        <p>
+          Global conservation initiatives are working tirelessly to protect and restore coral reef ecosystems through innovative approaches and international cooperation. Marine protected areas are being established to create safe havens where reefs can recover from human pressures. Scientists are developing coral restoration techniques, including coral gardening and assisted evolution programs that help corals adapt to changing conditions. Climate action remains crucial, with efforts to reduce greenhouse gas emissions and limit global temperature rise. Local communities are being engaged in reef monitoring and sustainable tourism practices that provide economic incentives for conservation. Advanced technologies like artificial intelligence and satellite monitoring are helping researchers track reef health and predict bleaching events. Through citizen science programs, reef cleanups, and supporting sustainable seafood choices, individuals can contribute to coral reef conservation while governments work to strengthen environmental regulations and reduce pollution sources.
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-col footer-logo-col">
+          <img
+            src="Images/Student-02/logo.png"
+            alt="Life Below Water Logo"
+            class="footer-logo"
+          />
+          <span class="footer-site-name">Life Below Water</span>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="profile.html">Profile</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="content_ST2.html">Ocean Cleanup</a></li>
+            <li><a href="content_ST3.html">Marine Life</a></li>
+            <li><a href="content_ST4.html">Conservation</a></li>
+            <li><a href="content_ST5.html">Get Involved</a></li>
+          </ul>
+        </div>
+      </div>
+       <p class="footer-credit">
+        Created by Student_02 |
+        <a href="Page_Editors/Student-02/pageEditor_ST2.html" target="_blank">Page Editor</a>
+      </p>
+    </footer>
+    <a href="#" class="go-top" aria-label="Go to top">⬆️</a>
+    <script>
+      const goTopButton = document.querySelector(".go-top");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+          goTopButton.style.display = "block";
+        } else {
+          goTopButton.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
